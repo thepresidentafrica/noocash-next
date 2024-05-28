@@ -11,7 +11,6 @@ import { ZodError } from "zod";
  * Initialize the tRPC router
  */
 const trpc = initTRPC.context<typeof createTRPCContext>().create({
-    transformer: superjson,
     errorFormatter({ shape, error }) {
         return {
             ...shape,
