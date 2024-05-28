@@ -10,7 +10,7 @@
     "release": "standard-version -S --tag-prefix server@ && git push --follow-tags",
     "minor": "standard-version -S --tag-prefix server@ --release-as minor && git push --follow-tags",
     "manor": "standard-version -S --tag-prefix server@ --release-as minor && git push --follow-tags",
-    "serve": "node dist/index.js"
+    "serve": "node dist/index.js --port 3009"
   },
   "dependencies": {
     "@apollo/server": "^4.10.4",
