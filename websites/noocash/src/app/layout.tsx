@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import {env} from "process";
 import ServerProvider from "@/components/ServerProvider/ServerProvider";
+import { FloatingNav } from "@/components/ui/FloatingNav";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,7 +20,20 @@ export default function RootLayout({
   return (
     <ServerProvider url={`${url}`}>
       <html lang="en" className="bg-gray-50">
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+        <FloatingNav navItems={[{
+          name: "Home",
+          link: "/",
+        },{
+          name: "Actions",
+          link: "/actions",
+        },
+        {
+          name: "Trpc",
+          link: "/trpc",
+        }
+        ]} />
+          {children}</body>
       </html>
     </ServerProvider>
   );
