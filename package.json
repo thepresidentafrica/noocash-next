@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "a2": "pnpm --filter api",
-    "a1": "pnpm --filter api2",
+    "korena": "pnpm --filter korena",
+    "noocash": "pnpm --filter noocash",
     "api": "pnpm --filter server"
   },
   "keywords": [],
