@@ -1,0 +1,7 @@
+packages:
+- api
+- api2
+- server
+- docs
+- lib
+- witslicious

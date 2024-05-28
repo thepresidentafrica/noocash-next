@@ -1,0 +1,14 @@
+{
+  "name": "wits",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "a2": "pnpm --filter api",
+    "a1": "pnpm --filter api2",
+    "api": "pnpm --filter server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
