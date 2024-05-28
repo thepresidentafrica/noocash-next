@@ -1,0 +1,33 @@
+name: ❤️‍🔥 Server Image Deployment
+on:
+  push:
+    tags:
+      - "server@*"
+
+jobs:
+  build-server-container:
+    runs-on: ubuntu-latest
+    name: 🚚 deploy server image
+    defaults:
+      run:
+        working-directory: ./server
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: setup pnpm
+        uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 8
+      - uses: actions/cache@v3
+        with:
+          path: "**/node_modules"
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/pnpm.lock') }}
+      - run: pnpm install --no-recursive --no-frozen-lockfile
+      - run: pnpm build
+      - run: docker build -t ghcr.io/web-infra-dev/rspress/server:latest .
+      - run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+      - run: docker tag ghcr.io/web-infra-dev/rspress/server:latest ghcr.io/${{ github.repository }}/server:${{ github.ref_name }}
+      - run: docker push ghcr.io/${{ github.repository }}/server:${{ github.ref_name }}
+
