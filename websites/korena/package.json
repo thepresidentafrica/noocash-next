@@ -1,9 +1,9 @@
 {
-  "name": "nextee",
-  "version": "0.0.22",
+  "name": "korena",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port 7766",
+    "dev": "next dev --port 9966",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
