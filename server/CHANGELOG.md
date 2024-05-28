@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/thepresidentafrica/noocash-next/compare/server@0.0.1...server@0.1.0) (2024-05-28)
+
 ### 0.0.1 (2024-05-28)
 
 
