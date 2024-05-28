@@ -1,6 +1,6 @@
 {
   "name": "server",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@apollo/server": "^4.10.4",
+    "@auth/express": "^0.5.5",
     "@graphql-tools/graphql-file-loader": "^8.0.1",
     "@graphql-tools/load": "^8.0.2",
     "@graphql-tools/schema": "^7.1.5",
