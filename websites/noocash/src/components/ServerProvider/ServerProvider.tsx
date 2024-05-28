@@ -3,7 +3,6 @@ import { trpClient } from '@/server/trpc/client'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { httpBatchLink } from '@trpc/react-query'
 import React, { useState } from 'react'
-import superjson from 'superjson'
 /**
  * Creates a server provider component that wraps the given children with a trpc client and a query client.
  *
@@ -17,7 +16,6 @@ const ServerProvider = ({ children, url }: { url: string, children: React.ReactN
     const [trpcClientInstance] = useState(trpClient.createClient({
         links: [
             httpBatchLink({
-                transformer: superjson,
                 url,
             })
         ]
