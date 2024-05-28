@@ -6,13 +6,12 @@ RUN npm install -g pnpm && pnpm install --no-frozen-lockfile --force
 RUN pnpm build
 
 # serve stage
-FROM gcr.io/distroless/nodejs
+FROM node:20-alpine
 WORKDIR /app
 COPY --from=build /app/dist ./dist
-COPY --from=build /app/node_modules ./node_modules
 COPY --from=build /app/package.json ./package.json
 COPY --from=build /app/graphql-schemas ./graphql-schemas
-
+RUN npm install --production --force
 EXPOSE 7870
 
 # Fix the error "Cannot find module '/app/node'"
