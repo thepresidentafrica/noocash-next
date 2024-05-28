@@ -1,15 +1,15 @@
 {
   "name": "server",
   "version": "0.1.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
     "start": "ts-node src/index.ts",
     "dev": "nodemon",
     "build": "tsc",
-    "release": "standard-version -S --tag-prefix server@ && git push --follow-tags",
-    "minor": "standard-version -S --tag-prefix server@ --release-as minor && git push --follow-tags",
-    "manor": "standard-version -S --tag-prefix server@ --release-as minor && git push --follow-tags",
+    "release": "standard-version -s --tag-prefix server@ && git push --follow-tags",
+    "minor": "standard-version -s --tag-prefix server@ --release-as minor && git push --follow-tags",
+    "manor": "standard-version -s --tag-prefix server@ --release-as minor && git push --follow-tags",
     "serve": "node dist/index.js --port 3009"
   },
   "dependencies": {
@@ -26,11 +26,12 @@
     "graphql-subscriptions": "^1.2.1",
     "subscriptions-transport-ws": "^0.9.19",
     "superjson": "^2.2.1",
+    "dotenv": "^16.4.5",
+
     "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
-    "dotenv": "^16.4.5",
     "nodemon": "^3.1.1",
     "ts-node": "^10.4.0",
     "ts-node-dev": "^1.1.8",
