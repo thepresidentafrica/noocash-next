@@ -1,6 +1,6 @@
 {
   "name": "server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
@@ -27,7 +27,6 @@
     "subscriptions-transport-ws": "^0.9.19",
     "superjson": "^2.2.1",
     "dotenv": "^16.4.5",
-
     "zod": "^3.23.8"
   },
   "devDependencies": {
