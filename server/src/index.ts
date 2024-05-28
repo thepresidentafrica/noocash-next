@@ -2,6 +2,11 @@ import { createServer } from "http";
 import express from "express";
 import { execute, subscribe } from "graphql";
 import cors from "cors";
+import { ExpressAuth } from "@auth/express";
+import GitHub from "@auth/express/providers/github"
+import Google from "@auth/express/providers/google"
+import Linkdin from "@auth/express/providers/linkedin"
+import Credentials from "@auth/express/providers/credentials"
 import { SubscriptionServer } from "subscriptions-transport-ws";
 import { expressMiddleware } from "@apollo/server/express4";
 import { trpcMiddleware } from "./trpc";
@@ -16,8 +21,11 @@ import { schema, server } from "./graphql";
   // parse the request body to json
   app.use(express.json());
   // setup cors headers
-  app.disable('x-powered-by');
-  app.use(express.static('public'));
+  app.disable("x-powered-by");
+  app.set("trust proxy", true);
+  app.set("json spaces", 2);
+  app.set("env", process.env.NODE_ENV);
+  app.use(express.static("public"));
   app.use(
     cors({
       origin: env.ALLOWED_ORIGINS,
