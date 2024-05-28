@@ -1,12 +1,15 @@
 {
   "name": "server",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start": "ts-node src/index.ts",
     "dev": "nodemon",
     "build": "tsc",
+    "release": "standard-version -S --tag-prefix server@ && git push --follow-tags",
+    "minor": "standard-version -S --tag-prefix server@ --release-as minor && git push --follow-tags",
+    "manor": "standard-version -S --tag-prefix server@ --release-as minor && git push --follow-tags",
     "serve": "node dist/index.js"
   },
   "dependencies": {
