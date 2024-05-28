@@ -8,5 +8,6 @@ export type AppRouter = typeof appRouter;
 
 export const trpcMiddleware = createExpressMiddleware({
   router: appRouter,
+
   createContext: () => ({}),
 });
