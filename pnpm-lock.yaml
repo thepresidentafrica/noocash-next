@@ -63,6 +63,9 @@ importers:
       subscriptions-transport-ws:
         specifier: ^0.9.19
         version: 0.9.19(graphql@15.8.0)
+      superjson:
+        specifier: ^2.2.1
+        version: 2.2.1
       zod:
         specifier: ^3.23.8
         version: 3.23.8
