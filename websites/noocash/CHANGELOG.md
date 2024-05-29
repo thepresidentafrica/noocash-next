@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.1 (2024-05-29)
+
+
+### Features
+
+* create config.ts ([ab7ec01](https://github.com/thepresidentafrica/noocash-next/commit/ab7ec01dd3e90fe7231f6f4c32b972c4342aeda0))
+* create FancyLayout.tsx ([9f138bb](https://github.com/thepresidentafrica/noocash-next/commit/9f138bbc8de8d2360f488577984afac2305100a7))
+* create FloatingNav.tsx ([0084500](https://github.com/thepresidentafrica/noocash-next/commit/0084500e31ccb599ba8ec18592827fe2e6782174))
+* create hello.ts ([1c2ec90](https://github.com/thepresidentafrica/noocash-next/commit/1c2ec90aa77a922c15e1b94bd55b1152afbf7409))
+* create HeroComponent.tsx ([5f00989](https://github.com/thepresidentafrica/noocash-next/commit/5f00989930e8f2efccebbc9ac644ca9af4a47f8d))
+* create next-env.d.ts ([42f4d95](https://github.com/thepresidentafrica/noocash-next/commit/42f4d9567f5d2e72274980dd49d6d74c63044fea))
+* create next-env.d.ts ([4330a8a](https://github.com/thepresidentafrica/noocash-next/commit/4330a8a35c600660e13a7a113f3fe85294f10445))
+* create next-env.d.ts 🔧 Update server port to use environment variables for flexibility ([50c5343](https://github.com/thepresidentafrica/noocash-next/commit/50c5343a6cd8799a96b1c0ff9bd0be5e4700d151))
+* create websites/noocash/src/components/HeroComponent/index.ts ([7d4d8ce](https://github.com/thepresidentafrica/noocash-next/commit/7d4d8ce8487fd822aa85eb15e4fa683ae9914565))
+
 ### [0.0.22](https://github.com/mitch1009/nextee/compare/nextee@0.0.21...nextee@0.0.22) (2024-05-19)
 
 ### [0.0.21](https://github.com/mitch1009/nextee/compare/nextee@0.0.20...nextee@0.0.21) (2024-05-19)
