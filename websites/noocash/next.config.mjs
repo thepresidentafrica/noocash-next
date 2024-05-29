@@ -13,7 +13,12 @@ const nextConfig = {
             },
             {
                 protocol: 'https',
-                hostname: 'https://www.wits.ac.za',
+                hostname: 'https://play.google.com',
+                port: '',
+            },
+            {
+                protocol: 'https',
+                hostname: 'https://www.apple.com/app-store/',
                 port: '',
             }
         ]
