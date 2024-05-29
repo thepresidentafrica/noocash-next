@@ -17,7 +17,7 @@ export const KeyFeaturesCard = ({
     return (
         <div
             className={cn(
-                "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
+                "grid grid-cols-1 md:grid-cols-2 mx-auto max-w-7xl gap-4 2xl:max-w-screen-2xl  lg:grid-cols-3  py-10",
                 className
             )}
         >
@@ -105,7 +105,7 @@ export const CardDescription = ({
     return (
         <p
             className={cn(
-                "mt-8 text-white tracking-wide leading-relaxed text-sm",
+                "sm-8 text-white tracking-wide leading-relaxed 2xl:text-lg",
                 className
             )}
         >
