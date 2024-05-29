@@ -33,6 +33,7 @@
     "@trpc/react-query": "11.0.0-rc.359",
     "@trpc/server": "11.0.0-rc.359",
     "@types/bcrypt": "^5.0.2",
+    "aos": "^2.3.4",
     "apollo-server-micro": "^3.13.0",
     "bcrypt": "^5.1.1",
     "clsx": "^2.1.1",
