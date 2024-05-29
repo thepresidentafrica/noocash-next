@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     default: "noo.cash| home",
     template: " noo.cash | %s",
   },
-  description: "Nextjs Auth Prisma tRPC template",
+  description: "noo.cash is a home for all your easy payment  needs",
 };
 
 export default function RootLayout({
@@ -29,12 +29,16 @@ export default function RootLayout({
             name: "Home",
             link: "/",
           }, {
-            name: "Actions",
-            link: "/actions",
+            name: "How it works",
+            link: "/#how-it-corks",
           },
           {
-            name: "Trpc",
-            link: "/trpc",
+            name: "Pricing",
+            link: "/#pricing",
+          },
+          {
+            name: "Developers",
+            link: "/#developers",
           }
           ]} />
           <FancyLayout>
