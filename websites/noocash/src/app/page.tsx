@@ -6,7 +6,7 @@ export default async function Home() {
       <HeroComponent />
       <KeyFeatures />
       <SharedSectionGrid  descriptions={
-        <div className="px-4 mx-3">
+        <div className="px-4 mx-3 space-y-6">
           <p>
             Noo Cash allows users to create virtual cards. These virtual cards can be used to pay for goods and services online. Users can create a A Local Currency virtual card ( Based on their African Country), or a Dollar virtual card (USD Card).
           </p>
