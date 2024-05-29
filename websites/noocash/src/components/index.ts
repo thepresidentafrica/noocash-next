@@ -1,6 +1,10 @@
-export * from './Navigation/NavigationLayout';
+export * from './AdminGuard';
+export * from './Auth';
+export * from './FancyLayout';
+export * from './HeroComponent';
+export * from './Home';
+export * from './KeyFeatures';
+export * from './Navigation';
+export * from './Welcome';
 export * from './button';
-
-
 export * from './utils';
-
