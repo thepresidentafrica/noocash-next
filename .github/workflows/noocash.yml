@@ -53,7 +53,16 @@ jobs:
         run: |
           docker build -t ghcr.io/${{ github.repository }}/noocash-website:${{ steps.vars.outputs.tag }} .
           docker push ghcr.io/${{ github.repository }}/noocash-website:${{ steps.vars.outputs.tag }}
-      - name: create a release 
+
+      - name: Login To Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.NOCASH_AZURE_CREDENTIALS }}
+      - name: Deploy to Azure
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: noocash
+          images: ghcr.io/${{ github.repository }}/noocash-website:${{ steps.vars.outputs.tag }}
+      - name: create a release
         uses: softprops/action-gh-release@v2.0.4
         if: startsWith(github.ref, 'refs/tags/')
-       
