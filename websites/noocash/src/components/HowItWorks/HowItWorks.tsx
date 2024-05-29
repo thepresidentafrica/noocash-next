@@ -1,6 +1,11 @@
 import React from 'react'
 import { HOW_IT_WORKS_DATA } from './HowItWorks.data'
 import Image from 'next/image'
+/**
+ * Renders the HowItWorks component, which displays a series of steps to get started with Noocash.
+ *
+ * @return {JSX.Element} The rendered HowItWorks component.
+ */
 export const HowItWorks = () => {
     return (
         <div className={' bg-purple-800 min-h-1/2 space-y-6 py-16  flex justify-center  max-h-3/4'}>
