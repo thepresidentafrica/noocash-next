@@ -8,4 +8,5 @@ export declare interface IKeyFeatures {
   title: string;
   description: string;
   icon: any;
+  link?: string
 }
