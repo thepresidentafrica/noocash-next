@@ -6,6 +6,7 @@ import { env } from "process";
 import ServerProvider from "@/components/ServerProvider/ServerProvider";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { FancyLayout } from "@/components/FancyLayout";
+import { AOSConfig } from "@/components/ui/Aos";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -58,6 +59,7 @@ export default function RootLayout({
           }
           ]} />
           <FancyLayout>
+          <AOSConfig />
             {children}
           </FancyLayout>
         </body>
