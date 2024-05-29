@@ -29,6 +29,20 @@ export const metadata: Metadata = {
     template: " noo.cash | %s",
   },
   description: "noo.cash is a home for all your easy payment  needs",
+  generator: "Next.js",
+  manifest: "/manifest.json",
+  keywords: ["noocash", "cash", "fintech", "banking", "money"],
+  themeColor: [{ media: "(prefers-color-scheme: dark)", color: "#fff" }],
+  authors: [
+    { name: "Mitch Chimwemwe Chanza Njala", url: "https://mitch.guru" },
+   
+  ],
+  viewport:
+    "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover",
+  icons: [
+    { rel: "apple-touch-icon", url: "icons/icon-128x128.png" },
+    { rel: "icon", url: "icons/icon-128x128.png" },
+  ],
 };
 
 export default function RootLayout({
