@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/thepresidentafrica/noocash-next/compare/noocash@0.0.5...noocash@0.0.6) (2024-05-29)
+
+
+### Features
+
+* create SharedSectionGrid.tsx ([0b41815](https://github.com/thepresidentafrica/noocash-next/commit/0b41815ade41eb3d2f0f1c1b39d20ab416850687))
+* create vcards.png ([f49eb62](https://github.com/thepresidentafrica/noocash-next/commit/f49eb62bd28b071e7dc8885faf54fcf73804ed7b))
+* create websites/noocash/src/components/SharedSectionGrid/index.ts ([ff3c4fe](https://github.com/thepresidentafrica/noocash-next/commit/ff3c4fe80234e8eff818fd7996a126909e54e33c))
+
 ### [0.0.5](https://github.com/thepresidentafrica/noocash-next/compare/noocash@0.0.4...noocash@0.0.5) (2024-05-29)
 
 ### [0.0.4](https://github.com/thepresidentafrica/noocash-next/compare/noocash@0.0.3...noocash@0.0.4) (2024-05-29)
