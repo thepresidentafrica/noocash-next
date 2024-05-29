@@ -5,7 +5,7 @@ export const HeroComponent = () => {
     <div className=" max-w-7xl mx-auto 2xl:max-w-screen-2xl min-h-screen flex flex-col sm:flex-row items-center justify-center py-12">
       <div className=" max-w-3xl flex flex-col items-center text-center mb-12 px-3">
         <Image data-aos="fade-up" width={1200} height={1200} src="/logo.svg" alt="noo.cash" className=' hidden sm:block animate-pulse w-1/2'></Image>
-        <h1 data-aos="fade-up" className="text-3xl md:text-5xl font-bold text-purple-900 mb-4">
+        <h1 data-aos="fade-up" className="">
           {"Let's"} make your payment experience easier.
         </h1>
         <p data-aos="fade-up" className="text-lg md:text-xl text-gray-700">
