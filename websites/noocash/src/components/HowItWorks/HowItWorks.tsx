@@ -14,7 +14,7 @@ export const HowItWorks = (): JSX.Element => {
                     Get Started in 3 Easy Steps
                 </h1>
                 <p className='sm:text-2xl px-4 max-w-3xl mx-auto'>Start  using noocash today and get the benefits of a cashless experience. Our process is easy. Just follow these simple steps </p>
-                <div className="w-full">
+                <div className="w-full my-24">
                     <div className="grid grid-cols-1 sm:grid-cols-3">
                         {
                             HOW_IT_WORKS_DATA.map((item, index) => (
