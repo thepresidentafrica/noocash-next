@@ -1,12 +1,11 @@
 import { KeyFeatures, SharedSectionGrid } from "@/components";
 import { HeroComponent } from "@/components/HeroComponent";
+import { HowItWorks } from "@/components/HowItWorks/HowItWorks";
 export default async function Home() {
   return (
     <main className="space-y-6">
       <HeroComponent />
       <KeyFeatures />
-
-
       <SharedSectionGrid descriptions={
         <div className="px-4 mx-3 space-y-6">
           <p>
@@ -24,7 +23,7 @@ export default async function Home() {
       <SharedSectionGrid descriptions={
         <div className="px-4 mx-3 space-y-6">
           <p>
-          Users can create QR codes to receive money and also to reward other users on the platform easily. The QR code that was created will only be assigned to the specific user it was created to request money from, or to gift/reward.
+            Users can create QR codes to receive money and also to reward other users on the platform easily. The QR code that was created will only be assigned to the specific user it was created to request money from, or to gift/reward.
           </p>
         </div>
 
@@ -33,6 +32,8 @@ export default async function Home() {
         title="Create QR Code to Receive Payments & Reward Users "
         image="/hero/qrcodes.png"
       />
+
+      <HowItWorks />
     </main>
   );
 }
