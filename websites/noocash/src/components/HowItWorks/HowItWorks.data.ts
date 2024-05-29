@@ -3,8 +3,8 @@ import { IHowItWorks } from "./HowItWorks.dto";
 export const HOW_IT_WORKS_DATA: IHowItWorks[] = [
   {
     title: "Create An Account",
-    icon: "/hero/register.png",
-    arrowIcon: "/hero/arrow.png",
+    icon: "/hero/auth.png",
+    arrowIcon: "/hero/user.png",
     description: "You can create an account to start using Noocash. Its free and easy to get started. We ensure that your data is safe and secure.",
   },
   {
