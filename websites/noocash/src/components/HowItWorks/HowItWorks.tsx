@@ -6,7 +6,7 @@ import Image from 'next/image'
  *
  * @return {JSX.Element} The rendered HowItWorks component.
  */
-export const HowItWorks = () => {
+export const HowItWorks = (): JSX.Element => {
     return (
         <div className={' bg-purple-800 min-h-1/2 space-y-6 py-16  flex justify-center  max-h-3/4'}>
             <div className="f  text-center text-white mx-auto max-w-7xl 2xl:max-w-screen-2xl">
