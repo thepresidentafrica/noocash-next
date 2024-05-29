@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/thepresidentafrica/noocash-next/compare/noocash@0.0.2...noocash@0.0.3) (2024-05-29)
+
+
+### Features
+
+* create Aos.tsx ([9c47ab0](https://github.com/thepresidentafrica/noocash-next/commit/9c47ab067adbd8ea2ee5b900e2913833e2785426))
+* create favicon.ico ([7578cb4](https://github.com/thepresidentafrica/noocash-next/commit/7578cb4387187ef76345e0443e9b65a4bdb43cfc))
+* create general.config.ts ([391f4cf](https://github.com/thepresidentafrica/noocash-next/commit/391f4cf8142c1d53b5c7e9c5623c05bdd249229a))
+* create profile.ts ([b22f959](https://github.com/thepresidentafrica/noocash-next/commit/b22f959f997146de54ee70d27379dd5220e16839))
+
 ### [0.0.2](https://github.com/thepresidentafrica/noocash-next/compare/noocash@0.0.1...noocash@0.0.2) (2024-05-29)
 
 
