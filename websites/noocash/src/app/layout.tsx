@@ -8,7 +8,10 @@ import { FancyLayout } from "@/components/FancyLayout";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "nextee tools| Home",
+  title: {
+    default: "noo.cash| home",
+    template: " noo.cash | %s",
+  },
   description: "Nextjs Auth Prisma tRPC template",
 };
 
