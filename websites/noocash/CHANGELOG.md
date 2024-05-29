@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/thepresidentafrica/noocash-next/compare/noocash@0.0.3...noocash@0.0.4) (2024-05-29)
+
+
+### Features
+
+* create KeyFeatures.data.tsx ([298b0f2](https://github.com/thepresidentafrica/noocash-next/commit/298b0f27b95b246ec0cb0ce2660ec1b731fb5973))
+* create KeyFeatures.dto.ts ([53e0c65](https://github.com/thepresidentafrica/noocash-next/commit/53e0c659b52efa6220d453fd5614b7aaf974fa23))
+* create KeyFeatures.tsx ([3269289](https://github.com/thepresidentafrica/noocash-next/commit/32692897180d01fc85e184fc46335fcd7568a297))
+* create KeyFeaturesCard.tsx ([fa6ae8f](https://github.com/thepresidentafrica/noocash-next/commit/fa6ae8f7dbb45dde3b3a53f78f2690506b2ae708))
+* create websites/noocash/src/components/KeyFeatures/index.ts ([1ec5971](https://github.com/thepresidentafrica/noocash-next/commit/1ec59711f0cfd8aa7f0662ac97569cd92fabb1d7))
+
 ### [0.0.3](https://github.com/thepresidentafrica/noocash-next/compare/noocash@0.0.2...noocash@0.0.3) (2024-05-29)
 
 
