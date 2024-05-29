@@ -1,6 +1,8 @@
 import React from 'react'
 import { HOW_IT_WORKS_DATA } from './HowItWorks.data'
 import Image from 'next/image'
+import { ArrowLongLeftIcon, ArrowLongRightIcon } from '@heroicons/react/20/solid'
+import { ArrowLongDownIcon } from '@heroicons/react/24/outline'
 /**
  * Renders the HowItWorks component, which displays a series of steps to get started with Noocash.
  *
@@ -18,13 +20,17 @@ export const HowItWorks = (): JSX.Element => {
                     <div className="grid grid-cols-1 sm:grid-cols-3">
                         {
                             HOW_IT_WORKS_DATA.map((item, index) => (
-                                <div key={index} className="flex items-center justify-center px-16 space-x-6">
+                                <div key={index} className="flex items-center flex-col sm:flex-row justify-center sm:px-16 px-8 space-x-6">
                                     <div className="e flex justify-center flex-col items-center">
                                         <Image width={1200} height={1200} src={item.icon} className='h-16 w-16 mb-8' alt="noocash"></Image>
-                                        <h2 className='text-white text-3xl font-bols'>{item.title}</h2>
+                                        <h2 className='text-white text-2xl my-4 sm:text-3xl font-bols'>{item.title}</h2>
                                         <p>{item.description}</p>
                                     </div>
-                                    {item.arrowIcon && <Image width={1200} height={1200} src={item.arrowIcon} className='h-8 w-8' alt="noocash"></Image>}
+                                    {item.arrowIcon && <div className='my-6 sm:my-0'> 
+                                        <ArrowLongRightIcon className='hidden h-8 sm:block text-white' />
+                                        <ArrowLongDownIcon className='sm:hidden h-8 text-white' />
+                                     </div>
+                                    }
 
                                 </div>
                             ))
