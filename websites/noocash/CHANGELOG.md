@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/thepresidentafrica/noocash-next/compare/noocash@0.0.1...noocash@0.0.2) (2024-05-29)
+
+
+### Features
+
+* create apple.png, google.png and hero.png ([7e5327d](https://github.com/thepresidentafrica/noocash-next/commit/7e5327d2bae01f52349f5200106c215c52bbe680))
+* create ImageCards.tsx ([920944c](https://github.com/thepresidentafrica/noocash-next/commit/920944c21ef94907992316ba9e4cdfbcf372141d))
+
 ### 0.0.1 (2024-05-29)
 
 
