@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 import { IKeyFeatures } from "./KeyFeatures.dto";
-
+import Image from "next/image";
 export const KeyFeaturesCard = ({
     items,
     className,
@@ -22,10 +22,10 @@ export const KeyFeaturesCard = ({
             )}
         >
             {items.map((item, idx) => (
-                <Link data-aos={idx%2 === 0 ? 'fade-right' : 'fade-left'}
+                <Link data-aos={idx % 2 === 0 ? 'fade-right' : 'fade-left'}
                     href={item?.link ?? ''}
                     key={item?.link}
-                    className="relative group   block p-2 h-full w-full"
+                    className="relative group fex justify-center items-center   block p-2 h-full w-full"
                     onMouseEnter={() => setHoveredIndex(idx)}
                     onMouseLeave={() => setHoveredIndex(null)}
                 >
@@ -46,9 +46,13 @@ export const KeyFeaturesCard = ({
                             />
                         )}
                     </AnimatePresence>
-                    <Card  className="bg-purple-700 dark:bg-slate-800">
-                        <CardTitle>{item.title}</CardTitle>
-                        <CardDescription>{item.description}</CardDescription>
+                    <Card className="bg-purple-700 flex justify-center flex-col items-center text-white dark:bg-slate-800">
+                        <div className="center w-full flex flex-col  items-center justify-ce">
+                            <Image className="h-16 w-16 flex items-center justify-center" src={item.icon} alt={item.title} height={100} width={100} />
+                            <CardTitle >{item.title}</CardTitle>
+                            <CardDescription>{item.description}</CardDescription>
+                        </div>
+
                     </Card>
                 </Link>
             ))}
@@ -84,9 +88,11 @@ export const CardTitle = ({
     children: React.ReactNode;
 }) => {
     return (
-        <h4 className={cn("text-white text-xl font-bold tracking-wide mt-4", className)}>
-            {children}
-        </h4>
+        <div className="flex justify-center items-center flex-col">
+            <h4 className={cn("text-white text-xl font-bold tracking-wide mt-2", className)}>
+                {children}
+            </h4>
+        </div>
     );
 };
 export const CardDescription = ({
