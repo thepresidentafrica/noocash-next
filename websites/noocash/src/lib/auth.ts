@@ -2,7 +2,10 @@ import { PrismaAdapter } from "@auth/prisma-adapter";
 import NextAuth from "next-auth";
 import Google from "next-auth/providers/google";
 import { db } from "./database";
+import Credentials from "next-auth/providers/credentials";
 import { AdapterUser } from "next-auth/adapters";
+import {  saltAndHashPassword } from "./general.config";
+import { getUserByCredentials } from "@/server/actions/profile";
 declare module "next-auth" {
   interface Session {
     user: {
@@ -14,7 +17,9 @@ declare module "next-auth" {
 
 export declare type TRoleProps = "ADMIN" | "USER" | any; // add role type definitions
 export const { handlers, signIn, signOut, auth } = NextAuth({
-  providers: [Google],
+  providers: [Google,
+    
+  ],
   theme: {
     colorScheme: "light",
     logo: "https://nextjs.org/static/twitter-logo.png", // change to your logo
