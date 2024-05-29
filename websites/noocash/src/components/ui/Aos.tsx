@@ -1,6 +1,6 @@
 'use client'
 import { useEffect } from 'react'
-import * as AOS from 'aos'
+import AOS from 'aos'
 import 'aos/dist/aos.css'
 export const AOSConfig = () => {
     useEffect(() => {
