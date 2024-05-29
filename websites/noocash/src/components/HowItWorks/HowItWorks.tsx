@@ -1,13 +1,31 @@
 import React from 'react'
-
+import { HOW_IT_WORKS_DATA } from './HowItWorks.data'
+import Image from 'next/image'
 export const HowItWorks = () => {
     return (
         <div className={' bg-purple-800 min-h-1/2 space-y-6 py-16  flex justify-center  max-h-3/4'}>
-            <div className="f text-white mx-auto max-w-7xl 2xl:max-w-screen-2xl">
+            <div className="f  text-center text-white mx-auto max-w-7xl 2xl:max-w-screen-2xl">
                 <h1 className='text-white'>
-                    HowItWorks
+                    Get Started in 3 Easy Steps
                 </h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis ratione laudantium accusamus natus inventore beatae quas optio. Obcaecati, saepe fugiat. Amet, natus doloremque suscipit eum sit earum praesentium quidem aliquid accusamus officia reprehenderit id maxime similique obcaecati, consequatur ex, exercitationem minima enim veniam quia incidunt. Labore, ut aut expedita vero doloribus, enim quidem molestiae soluta, animi rem reiciendis. Doloremque, neque debitis voluptate voluptatibus optio, tempora soluta fuga recusandae eveniet sapiente autem quae fugiat quod quos vitae, ipsa at nostrum! Maiores rerum, consequatur delectus sint quibusdam voluptatibus quisquam nostrum ut aut unde repudiandae tenetur quas vitae numquam iste, et distinctio omnis! Minima laborum id quae voluptas dolores accusamus aliquid, nisi iure inventore, earum eos, aperiam fugiat cupiditate voluptates velit pariatur similique laboriosam beatae neque. Placeat, obcaecati. Voluptas, libero corrupti quo reiciendis voluptate temporibus! Earum itaque odio ipsa? Recusandae tempora doloremque autem ipsam in molestias perferendis repellat voluptatem modi at quasi, quos dolores consectetur, reiciendis voluptates, esse earum ad velit! Voluptatem debitis sint illo quasi vel maxime tenetur voluptas error ab voluptatum dolores delectus quia eum esse laboriosam ratione accusamus sit libero labore eveniet amet repellat, laborum quo. Maiores est molestias quisquam vero delectus! Porro consequuntur sit officia cum non esse culpa aut numquam enim, deleniti debitis, exercitationem, reiciendis quis ullam. Modi nostrum nulla recusandae consectetur praesentium iusto eius quasi est magni, commodi cupiditate dolor blanditiis nisi eos molestias pariatur voluptates ex impedit dolorem dignissimos, exercitationem et assumenda? Eaque repellat reprehenderit neque harum inventore ea saepe, facilis quibusdam enim rerum odit amet veniam. Temporibus, aliquam incidunt quos, illum vitae doloribus assumenda et maxime molestias ad aut nisi sed necessitatibus porro! Eveniet pariatur dolor tempore nam minus, quam et sit placeat officiis blanditiis perferendis itaque quasi quas in iusto? Voluptatum odio eligendi eos quam necessitatibus expedita ipsum minus adipisci praesentium placeat rem accusamus dicta molestias at molestiae laborum, optio modi consectetur unde illo. Labore magni aperiam itaque, tenetur nisi nam modi. Et alias nisi saepe sint aliquam porro dolorum rerum, cupiditate temporibus laboriosam, placeat cumque fugiat dolore id voluptatem laborum nostrum, excepturi nihil quis unde eligendi deleniti debitis. Temporibus saepe in ratione voluptate. Enim repellendus nobis cupiditate error, iusto facere ad iure itaque reiciendis molestiae porro dolore! Fuga, consectetur eligendi facere delectus veritatis minima exercitationem aperiam error, necessitatibus adipisci quibusdam non fugiat excepturi neque impedit soluta unde itaque aut sunt ab! Architecto ad debitis nemo repudiandae! Aut culpa laudantium rerum libero ducimus eligendi quam dolore sunt sequi, enim placeat amet voluptas at quisquam, adipisci ipsa doloremque quidem obcaecati minima nesciunt numquam dolorum et incidunt sit! Enim est quidem voluptatum? Beatae suscipit, tempora adipisci quia voluptate quae nostrum vel officiis quo dolorum, id ipsa ullam! Maxime ab voluptates nam voluptas id numquam cupiditate consequuntur animi veniam odio qui dolor quidem minima at ratione dolorem, aperiam rem iste nesciunt. Corporis ipsa iste similique labore. Expedita placeat aperiam ab enim explicabo iure nesciunt voluptatibus beatae non vel impedit dolore doloribus ipsam perspiciatis, autem saepe vero quae quos ut. Corrupti vel consequuntur, ut asperiores facere dolores reprehenderit.</p>
+                <p className='sm:text-xl px-4 max-w-3xl mx-auto'>Start  using noocash today and get the benefits of a cashless experience. Our process is easy. Just follow these simple steps </p>
+                <div className="w-full">
+                    <div className="grid grid-cols-1 sm:grid-cols-3">
+                        {
+                            HOW_IT_WORKS_DATA.map((item, index) => (
+                                <div key={index} className="flex items-center justify-center px-16 space-x-6">
+                                    <div className="e flex justify-center flex-col items-center">
+                                        <Image width={1200} height={1200} src={item.icon} className='h-16 w-16 mb-4' alt="noocash"></Image>
+                                        <h2 className='text-white text-3xl font-bols'>{item.title}</h2>
+                                        <p>{item.description}</p>
+                                    </div>
+                                    {item.arrowIcon && <Image width={1200} height={1200} src={item.arrowIcon} className='h-8 w-8' alt="noocash"></Image>}
+
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
             </div>
         </div>
     )
