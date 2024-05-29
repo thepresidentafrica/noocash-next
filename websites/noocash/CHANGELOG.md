@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/thepresidentafrica/noocash-next/compare/noocash@0.0.4...noocash@0.0.5) (2024-05-29)
+
 ### [0.0.4](https://github.com/thepresidentafrica/noocash-next/compare/noocash@0.0.3...noocash@0.0.4) (2024-05-29)
 
 
