@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <ServerProvider url={`${url}`}>
 
-      <html lang="en" className="bg-purple-50 overflow-x-hidden">
+      <html lang="en" className="bg-purple-50">
         <body className={`${inter.className} overflow-x-hidden`}>
           <FloatingNav navItems={[{
             name: "Home",
