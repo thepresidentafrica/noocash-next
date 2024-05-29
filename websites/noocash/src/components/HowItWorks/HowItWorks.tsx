@@ -20,7 +20,7 @@ export const HowItWorks = (): JSX.Element => {
                             HOW_IT_WORKS_DATA.map((item, index) => (
                                 <div key={index} className="flex items-center justify-center px-16 space-x-6">
                                     <div className="e flex justify-center flex-col items-center">
-                                        <Image width={1200} height={1200} src={item.icon} className='h-16 w-16 mb-4' alt="noocash"></Image>
+                                        <Image width={1200} height={1200} src={item.icon} className='h-16 w-16 mb-8' alt="noocash"></Image>
                                         <h2 className='text-white text-3xl font-bols'>{item.title}</h2>
                                         <p>{item.description}</p>
                                     </div>
