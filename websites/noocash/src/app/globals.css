@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+h1 {
+    @apply text-3xl md:text-5xl font-bold py-3 text-purple-900 mb-4
+}
