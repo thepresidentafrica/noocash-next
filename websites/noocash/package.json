@@ -25,6 +25,8 @@
     "@headlessui/react": "^1.7.19",
     "@heroicons/react": "^2.1.3",
     "@prisma/client": "^5.13.0",
+    "@react-three/drei": "^9.105.6",
+    "@react-three/fiber": "^8.16.6",
     "@tanstack/react-query": "^5.34.1",
     "@trpc/client": "11.0.0-rc.359",
     "@trpc/next": "11.0.0-rc.359",
@@ -42,6 +44,8 @@
     "react-hook-form-persist": "^3.0.0",
     "superjson": "^2.2.1",
     "tailwind-merge": "^2.3.0",
+    "three": "^0.164.1",
+    "three-globe": "^2.31.0",
     "zod": "^3.23.6"
   },
   "devDependencies": {
