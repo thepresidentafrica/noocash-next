@@ -6,17 +6,19 @@ import { sendSubscriptionEmail } from '@/server/actions/mailAction'
 export const Subscriptions = () => {
     const { getValues, reset, register, formState: { errors } } = useForm()
     const [sending, setSending] = useState(false)
+    const [err, setErr] = useState(null)
     const onSubmit = async (e: any) => {
         e.preventDefault()
         setSending(true)
         try {
             const email = getValues('email')
-
             const sent = await sendSubscriptionEmail(email)
             sent && reset()
-            setSending(false)
-        } catch (error) {
+        } catch (error:any) {
             console.log(error)
+            setErr(error.message)
+        } finally {
+            setSending(false)
         }
     }
     return (
@@ -25,9 +27,7 @@ export const Subscriptions = () => {
                 <div className="f max-w-3xl justify-center items-center flex flex-col">
                     <h1 className='text-center'>Subscribe to get updates</h1>
                     <p className=''>Would you like us to send you regular updates about product features, promotions, and security updates? input your email address below, and we’ll make sure that we keep you informed</p>
-                    <pre>
-                        {JSON.stringify({ errors }, null, 2)}
-                    </pre>
+                   <p>{err}</p>
                     <form onSubmit={onSubmit} className='flex space-y-6 w-full'>
                         <div className="space-y-6 flex-1"><label htmlFor="email"></label>
                             <input {...register('email', { required: "please enter your email" })} type="text" id='email' name='email' className='border-l focus:outline-none outline-none ring-0 focus:ring-0 border-t border-b rounded-tl rounded-bl  w-full border-[#163a59] p-3' placeholder='Enter email address' />
