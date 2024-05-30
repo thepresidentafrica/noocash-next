@@ -106,13 +106,13 @@ importers:
         version: 3.10.4(@types/react@18.3.3)(graphql@16.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(subscriptions-transport-ws@0.11.0(graphql@16.8.1))
       '@apollo/experimental-nextjs-app-support':
         specifier: ^0.10.1
-        version: 0.10.1(@apollo/client@3.10.4(@types/react@18.3.3)(graphql@16.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(subscriptions-transport-ws@0.11.0(graphql@16.8.1)))(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+        version: 0.10.1(@apollo/client@3.10.4(@types/react@18.3.3)(graphql@16.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(subscriptions-transport-ws@0.11.0(graphql@16.8.1)))(next@14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       '@apollo/server':
         specifier: ^4.10.4
         version: 4.10.4(graphql@16.8.1)
       '@as-integrations/next':
         specifier: ^3.0.0
-        version: 3.0.0(@apollo/server@4.10.4(graphql@16.8.1))(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+        version: 3.0.0(@apollo/server@4.10.4(graphql@16.8.1))(next@14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@auth/prisma-adapter':
         specifier: ^2.1.0
         version: 2.1.0(@prisma/client@5.14.0(prisma@5.14.0))
@@ -133,7 +133,7 @@ importers:
         version: 11.0.0-rc.359(@trpc/server@11.0.0-rc.359)
       '@trpc/next':
         specifier: 11.0.0-rc.359
-        version: 11.0.0-rc.359(@tanstack/react-query@5.40.0(react@18.3.1))(@trpc/client@11.0.0-rc.359(@trpc/server@11.0.0-rc.359))(@trpc/react-query@11.0.0-rc.359(@tanstack/react-query@5.40.0(react@18.3.1))(@trpc/client@11.0.0-rc.359(@trpc/server@11.0.0-rc.359))(@trpc/server@11.0.0-rc.359)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@trpc/server@11.0.0-rc.359)(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 11.0.0-rc.359(@tanstack/react-query@5.40.0(react@18.3.1))(@trpc/client@11.0.0-rc.359(@trpc/server@11.0.0-rc.359))(@trpc/react-query@11.0.0-rc.359(@tanstack/react-query@5.40.0(react@18.3.1))(@trpc/client@11.0.0-rc.359(@trpc/server@11.0.0-rc.359))(@trpc/server@11.0.0-rc.359)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@trpc/server@11.0.0-rc.359)(next@14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@trpc/react-query':
         specifier: 11.0.0-rc.359
         version: 11.0.0-rc.359(@tanstack/react-query@5.40.0(react@18.3.1))(@trpc/client@11.0.0-rc.359(@trpc/server@11.0.0-rc.359))(@trpc/server@11.0.0-rc.359)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -151,7 +151,7 @@ importers:
         version: 14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next-auth:
         specifier: 5.0.0-beta.17
-        version: 5.0.0-beta.17(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+        version: 5.0.0-beta.17(next@14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -170,6 +170,9 @@ importers:
       zod:
         specifier: ^3.23.8
         version: 3.23.8
+      zustand:
+        specifier: ^4.5.2
+        version: 4.5.2(@types/react@18.3.3)(react@18.3.1)
     devDependencies:
       '@changesets/cli':
         specifier: ^2.27.5
@@ -212,13 +215,13 @@ importers:
         version: 3.10.4(@types/react@18.3.3)(graphql@16.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(subscriptions-transport-ws@0.11.0(graphql@16.8.1))
       '@apollo/experimental-nextjs-app-support':
         specifier: ^0.10.1
-        version: 0.10.1(@apollo/client@3.10.4(@types/react@18.3.3)(graphql@16.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(subscriptions-transport-ws@0.11.0(graphql@16.8.1)))(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+        version: 0.10.1(@apollo/client@3.10.4(@types/react@18.3.3)(graphql@16.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(subscriptions-transport-ws@0.11.0(graphql@16.8.1)))(next@14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       '@apollo/server':
         specifier: ^4.10.4
         version: 4.10.4(graphql@16.8.1)
       '@as-integrations/next':
         specifier: ^3.0.0
-        version: 3.0.0(@apollo/server@4.10.4(graphql@16.8.1))(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+        version: 3.0.0(@apollo/server@4.10.4(graphql@16.8.1))(next@14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@auth/prisma-adapter':
         specifier: ^2.1.0
         version: 2.1.0(@prisma/client@5.14.0(prisma@5.14.0))
@@ -248,7 +251,7 @@ importers:
         version: 11.0.0-rc.359(@trpc/server@11.0.0-rc.359)
       '@trpc/next':
         specifier: 11.0.0-rc.359
-        version: 11.0.0-rc.359(@tanstack/react-query@5.40.0(react@18.3.1))(@trpc/client@11.0.0-rc.359(@trpc/server@11.0.0-rc.359))(@trpc/react-query@11.0.0-rc.359(@tanstack/react-query@5.40.0(react@18.3.1))(@trpc/client@11.0.0-rc.359(@trpc/server@11.0.0-rc.359))(@trpc/server@11.0.0-rc.359)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@trpc/server@11.0.0-rc.359)(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 11.0.0-rc.359(@tanstack/react-query@5.40.0(react@18.3.1))(@trpc/client@11.0.0-rc.359(@trpc/server@11.0.0-rc.359))(@trpc/react-query@11.0.0-rc.359(@tanstack/react-query@5.40.0(react@18.3.1))(@trpc/client@11.0.0-rc.359(@trpc/server@11.0.0-rc.359))(@trpc/server@11.0.0-rc.359)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@trpc/server@11.0.0-rc.359)(next@14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@trpc/react-query':
         specifier: 11.0.0-rc.359
         version: 11.0.0-rc.359(@tanstack/react-query@5.40.0(react@18.3.1))(@trpc/client@11.0.0-rc.359(@trpc/server@11.0.0-rc.359))(@trpc/server@11.0.0-rc.359)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -281,7 +284,7 @@ importers:
         version: 14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next-auth:
         specifier: 5.0.0-beta.17
-        version: 5.0.0-beta.17(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+        version: 5.0.0-beta.17(next@14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       next-pwa:
         specifier: ^5.6.0
         version: 5.6.0(@babel/core@7.24.6)(next@14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(webpack@5.91.0)
@@ -315,6 +318,9 @@ importers:
       zod:
         specifier: ^3.23.8
         version: 3.23.8
+      zustand:
+        specifier: ^4.5.2
+        version: 4.5.2(@types/react@18.3.3)(react@18.3.1)
     devDependencies:
       '@changesets/cli':
         specifier: ^2.27.5
@@ -7072,7 +7078,7 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
-  '@apollo/experimental-nextjs-app-support@0.10.1(@apollo/client@3.10.4(@types/react@18.3.3)(graphql@16.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(subscriptions-transport-ws@0.11.0(graphql@16.8.1)))(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
+  '@apollo/experimental-nextjs-app-support@0.10.1(@apollo/client@3.10.4(@types/react@18.3.3)(graphql@16.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(subscriptions-transport-ws@0.11.0(graphql@16.8.1)))(next@14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@apollo/client': 3.10.4(@types/react@18.3.3)(graphql@16.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(subscriptions-transport-ws@0.11.0(graphql@16.8.1))
       '@apollo/client-react-streaming': 0.10.1(@apollo/client@3.10.4(@types/react@18.3.3)(graphql@16.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(subscriptions-transport-ws@0.11.0(graphql@16.8.1)))(react@18.3.1)
@@ -7249,7 +7255,7 @@ snapshots:
     dependencies:
       xss: 1.0.15
 
-  '@as-integrations/next@3.0.0(@apollo/server@4.10.4(graphql@16.8.1))(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
+  '@as-integrations/next@3.0.0(@apollo/server@4.10.4(graphql@16.8.1))(next@14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@apollo/server': 4.10.4(graphql@16.8.1)
       next: 14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -9161,7 +9167,7 @@ snapshots:
     dependencies:
       '@trpc/server': 11.0.0-rc.359
 
-  '@trpc/next@11.0.0-rc.359(@tanstack/react-query@5.40.0(react@18.3.1))(@trpc/client@11.0.0-rc.359(@trpc/server@11.0.0-rc.359))(@trpc/react-query@11.0.0-rc.359(@tanstack/react-query@5.40.0(react@18.3.1))(@trpc/client@11.0.0-rc.359(@trpc/server@11.0.0-rc.359))(@trpc/server@11.0.0-rc.359)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@trpc/server@11.0.0-rc.359)(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@trpc/next@11.0.0-rc.359(@tanstack/react-query@5.40.0(react@18.3.1))(@trpc/client@11.0.0-rc.359(@trpc/server@11.0.0-rc.359))(@trpc/react-query@11.0.0-rc.359(@tanstack/react-query@5.40.0(react@18.3.1))(@trpc/client@11.0.0-rc.359(@trpc/server@11.0.0-rc.359))(@trpc/server@11.0.0-rc.359)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@trpc/server@11.0.0-rc.359)(next@14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@trpc/client': 11.0.0-rc.359(@trpc/server@11.0.0-rc.359)
       '@trpc/server': 11.0.0-rc.359
@@ -12611,7 +12617,7 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next-auth@5.0.0-beta.17(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
+  next-auth@5.0.0-beta.17(next@14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
     dependencies:
       '@auth/core': 0.30.0
       next: 14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
