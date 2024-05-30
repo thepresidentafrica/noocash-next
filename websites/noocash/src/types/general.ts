@@ -7,3 +7,9 @@ export declare type ICredentialInputs = {
     email: string
     password: string
 }
+
+export declare type NoocashResponse = {
+    success: boolean
+    error?: string
+    message?: string
+}
