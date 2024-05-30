@@ -14,5 +14,8 @@
   "devDependencies": {
     "@changesets/cli": "^2.27.5",
     "standard-version": "^9.5.0"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.13"
   }
 }
