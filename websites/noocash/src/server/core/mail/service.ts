@@ -1,10 +1,6 @@
 import nodemailer from "nodemailer";
 import { IMailSchema } from "./types";
 export class MailService {
-  async send() {
-    return true;
-  }
-
   static get mailConfig() {
     return this.mailCOnfig;
   }
