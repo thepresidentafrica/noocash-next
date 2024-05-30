@@ -1,3 +1,4 @@
+import nodemailer from "nodemailer";
 export class MailService {
   async send() {
     return true;
@@ -15,4 +16,15 @@ export class MailService {
       pass: process.env.MAIL_PASS,
     },
   };
+
+  static async sendEmail(to: string, subject: string, html: string) {
+    const transporter = nodemailer.createTransport(this.mailConfig);
+    const info = await transporter.sendMail({
+      from: `"Noocash" <${process.env.FROM_MAIL_USER}>`,
+      to,
+      subject,
+      html,
+    });
+    console.log("Message sent: %s", info.messageId);
+  }
 }
