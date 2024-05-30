@@ -1,4 +1,4 @@
-import { KeyFeatures, SharedSectionGrid } from "@/components";
+import { KeyFeatures, SharedSectionGrid, Subscriptions } from "@/components";
 import { HeroComponent } from "@/components/HeroComponent";
 import { HowItWorks } from "@/components/HowItWorks/HowItWorks";
 export default async function Home() {
@@ -34,6 +34,7 @@ export default async function Home() {
       />
 
       <HowItWorks />
+      <Subscriptions/>
     </main>
   );
 }
