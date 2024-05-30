@@ -1,12 +1,14 @@
-import { IMailSchema, MailService } from "../core/mail";
+"use server";
+import { NoocashResponse } from "@/types/general";
+import { MailService } from "../core/mail";
 
 /**
  * Sends a subscription email using the provided mail information.
  *
- * @param {IMailSchema} mail - The mail information for the subscription email.
+ * @param {string} mail - The mail information for the subscription email.
  * @return {Promise<boolean>} A promise that resolves to true if the email is sent successfully, or false otherwise.
  */
-export const sendSubscriptionEmail = async (email: string): Promise<boolean> => {
+export const sendSubscriptionEmail = async (email: string): Promise<NoocashResponse> => {
   try {
     const html = `
     <html>
@@ -56,8 +58,15 @@ export const sendSubscriptionEmail = async (email: string): Promise<boolean> => 
     </html>
     `;
     await MailService.sendEmail({ to: email, subject: "Subscription to noo.cash", text: "noo.cash", html });
-    return true;
-  } catch (error) {
-    return false;
+    return {
+      success: true,
+      message: "Email sent",
+    };
+  } catch (error: any) {
+    return {
+      error: error.message,
+      message: `Error sending email: ${error.message}`,
+      success: false,
+    };
   }
 };
