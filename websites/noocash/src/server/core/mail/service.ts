@@ -1,4 +1,5 @@
 import nodemailer from "nodemailer";
+import { IMailSchema } from "./types";
 export class MailService {
   async send() {
     return true;
@@ -17,13 +18,11 @@ export class MailService {
     },
   };
 
-  static async sendEmail(to: string, subject: string, html: string) {
+  static async sendEmail(mail: IMailSchema) {
     const transporter = nodemailer.createTransport(this.mailConfig);
     const info = await transporter.sendMail({
-      from: `"Noocash" <${process.env.FROM_MAIL_USER}>`,
-      to,
-      subject,
-      html,
+      from: `"Noo cash" <${process.env.FROM_MAIL_USER}>`,
+      ...mail,
     });
     console.log("Message sent: %s", info.messageId);
   }
