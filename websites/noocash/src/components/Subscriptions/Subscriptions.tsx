@@ -2,14 +2,19 @@
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { SpinnButton } from '../SpinButton'
+import { sendSubscriptionEmail } from '@/server/actions/mailAction'
 export const Subscriptions = () => {
     const { getValues, reset, register, formState: { errors } } = useForm()
     const [sending, setSending] = useState(false)
-    const onSubmit = (e: any) => {
+    const onSubmit = async (e: any) => {
         e.preventDefault()
         setSending(true)
         try {
-            reset()
+            const email = getValues('email')
+
+            const sent = await sendSubscriptionEmail(email)
+            sent && reset()
+            setSending(false)
         } catch (error) {
             console.log(error)
         }
@@ -21,7 +26,7 @@ export const Subscriptions = () => {
                     <h1 className='text-center'>Subscribe to get updates</h1>
                     <p className=''>Would you like us to send you regular updates about product features, promotions, and security updates? input your email address below, and we’ll make sure that we keep you informed</p>
                     <pre>
-                        {JSON.stringify({errors}, null, 2)}
+                        {JSON.stringify({ errors }, null, 2)}
                     </pre>
                     <form onSubmit={onSubmit} className='flex space-y-6 w-full'>
                         <div className="space-y-6 flex-1"><label htmlFor="email"></label>
