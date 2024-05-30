@@ -6,6 +6,7 @@ export * from './Home';
 export * from './KeyFeatures';
 export * from './Navigation';
 export * from './SharedSectionGrid';
+export * from './Subscriptions';
 export * from './Welcome';
 export * from './button';
 export * from './utils';
