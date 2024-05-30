@@ -41,7 +41,7 @@ export const sendSubscriptionEmail = async (email: string): Promise<NoocashRespo
           .button {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #007bff;
+            background-color: purple;
             color: #ffffff;
             text-decoration: none;
             border-radius: 4px;
