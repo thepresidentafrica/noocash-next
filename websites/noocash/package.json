@@ -52,7 +52,8 @@
     "tailwind-merge": "^2.3.0",
     "three": "^0.164.1",
     "three-globe": "^2.31.0",
-    "zod": "^3.23.8"
+    "zod": "^3.23.8",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.5",
