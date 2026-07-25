@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   out:
-    runs-on: [self-hosted, Linux, X64]
+    runs-on: self-hosted
     steps:
       - name: emit
         env:
