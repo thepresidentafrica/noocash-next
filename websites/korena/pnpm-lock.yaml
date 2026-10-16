@@ -10,22 +10,22 @@ importers:
     dependencies:
       '@apollo/client':
         specifier: 3.10.0-rc.1
-        version: 3.10.0-rc.1(@types/react@18.3.1)(graphql@16.8.1)(react-dom@18.3.1)(react@18.3.1)
+        version: 3.10.0-rc.1(@types/react@18.3.1)(graphql@16.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@apollo/experimental-nextjs-app-support':
         specifier: ^0.10.0
-        version: 0.10.0(@apollo/client@3.10.0-rc.1)(next@14.2.3)(react@18.3.1)
+        version: 0.10.0(@apollo/client@3.10.0-rc.1(@types/react@18.3.1)(graphql@16.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       '@apollo/server':
         specifier: ^4.10.4
-        version: 4.10.4(graphql@16.8.1)
+        version: 4.10.4(graphql@16.8.1)(supports-color@7.2.0)
       '@as-integrations/next':
         specifier: ^3.0.0
-        version: 3.0.0(@apollo/server@4.10.4)(next@14.2.3)
+        version: 3.0.0(@apollo/server@4.10.4(graphql@16.8.1)(supports-color@7.2.0))(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@auth/prisma-adapter':
         specifier: ^2.0.0
-        version: 2.0.0(@prisma/client@5.13.0)
+        version: 2.0.0(@prisma/client@5.13.0(prisma@5.13.0))
       '@headlessui/react':
         specifier: ^1.7.19
-        version: 1.7.19(react-dom@18.3.1)(react@18.3.1)
+        version: 1.7.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@heroicons/react':
         specifier: ^2.1.3
         version: 2.1.3(react@18.3.1)
@@ -40,10 +40,10 @@ importers:
         version: 11.0.0-rc.359(@trpc/server@11.0.0-rc.359)
       '@trpc/next':
         specifier: 11.0.0-rc.359
-        version: 11.0.0-rc.359(@tanstack/react-query@5.34.1)(@trpc/client@11.0.0-rc.359)(@trpc/react-query@11.0.0-rc.359)(@trpc/server@11.0.0-rc.359)(next@14.2.3)(react-dom@18.3.1)(react@18.3.1)
+        version: 11.0.0-rc.359(@tanstack/react-query@5.34.1(react@18.3.1))(@trpc/client@11.0.0-rc.359(@trpc/server@11.0.0-rc.359))(@trpc/react-query@11.0.0-rc.359(@tanstack/react-query@5.34.1(react@18.3.1))(@trpc/client@11.0.0-rc.359(@trpc/server@11.0.0-rc.359))(@trpc/server@11.0.0-rc.359)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@trpc/server@11.0.0-rc.359)(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@trpc/react-query':
         specifier: 11.0.0-rc.359
-        version: 11.0.0-rc.359(@tanstack/react-query@5.34.1)(@trpc/client@11.0.0-rc.359)(@trpc/server@11.0.0-rc.359)(react-dom@18.3.1)(react@18.3.1)
+        version: 11.0.0-rc.359(@tanstack/react-query@5.34.1(react@18.3.1))(@trpc/client@11.0.0-rc.359(@trpc/server@11.0.0-rc.359))(@trpc/server@11.0.0-rc.359)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@trpc/server':
         specifier: 11.0.0-rc.359
         version: 11.0.0-rc.359
@@ -55,10 +55,10 @@ importers:
         version: 2.12.6(graphql@16.8.1)
       next:
         specifier: 14.2.3
-        version: 14.2.3(react-dom@18.3.1)(react@18.3.1)
+        version: 14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next-auth:
         specifier: 5.0.0-beta.17
-        version: 5.0.0-beta.17(next@14.2.3)(react@18.3.1)
+        version: 5.0.0-beta.17(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -70,7 +70,7 @@ importers:
         version: 7.51.4(react@18.3.1)
       react-hook-form-persist:
         specifier: ^3.0.0
-        version: 3.0.0(react-hook-form@7.51.4)(react@18.3.1)
+        version: 3.0.0(react-hook-form@7.51.4(react@18.3.1))(react@18.3.1)
       superjson:
         specifier: ^2.2.1
         version: 2.2.1
@@ -92,10 +92,10 @@ importers:
         version: 18.3.0
       eslint:
         specifier: ^8.57.0
-        version: 8.57.0
+        version: 8.57.0(supports-color@7.2.0)
       eslint-config-next:
         specifier: 14.2.3
-        version: 14.2.3(eslint@8.57.0)(typescript@5.4.5)
+        version: 14.2.3(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.4.5)
       postcss:
         specifier: ^8.4.38
         version: 8.4.38
@@ -1175,6 +1175,7 @@ packages:
   conventional-changelog-core@4.2.4:
     resolution: {integrity: sha512-gDVS+zVJHE2v4SLc6B0sLsPiloR0ygU7HaDW14aNJE1v4SlqJPILPl/aJC7YdtRE4CybBf8gDwObBvKha8Xlyg==}
     engines: {node: '>=10'}
+    deprecated: Deprecated and no longer maintained. Please use conventional-changelog instead.
 
   conventional-changelog-ember@2.0.9:
     resolution: {integrity: sha512-ulzIReoZEvZCBDhcNYfDIsLTHzYHc7awh+eI44ZtV5cx6LVxLlVtEmcO+2/kGIHGtw+qVabJYjdI5cJOQgXh1A==}
@@ -1547,6 +1548,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -1784,8 +1786,8 @@ packages:
     resolution: {integrity: sha512-59LZHPdGZVh695Ud9lRzPBVTtlX9ZCV150Er2W43ro37wVof0ctenSaskPPjN7lVTIN8mSZt8PHUNKZuNQUuxw==}
     engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
 
-  handlebars@4.7.8:
-    resolution: {integrity: sha512-vafaFqs8MZkRrSX7sFVUdo3ap/eNiLnb4IakshzvP56X5Nr1iGKAIqdX6tMlm6HcNRIkr6AxO5jFEoJzzpT8aQ==}
+  handlebars@4.7.10:
+    resolution: {integrity: sha512-P5VJMVM7qgBn6vjXMw8WG9uVI+ncf2pi72j4de4yz5ZULLj2RGqLYaKOYGsgyrViQ0tePOVlN1tDCCXXtFqXKg==}
     engines: {node: '>=0.4.7'}
     hasBin: true
 
@@ -3353,14 +3355,14 @@ snapshots:
     dependencies:
       graphql: 16.8.1
 
-  '@apollo/client-react-streaming@0.10.0(@apollo/client@3.10.0-rc.1)(react@18.3.1)':
+  '@apollo/client-react-streaming@0.10.0(@apollo/client@3.10.0-rc.1(@types/react@18.3.1)(graphql@16.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@apollo/client': 3.10.0-rc.1(@types/react@18.3.1)(graphql@16.8.1)(react-dom@18.3.1)(react@18.3.1)
+      '@apollo/client': 3.10.0-rc.1(@types/react@18.3.1)(graphql@16.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       superjson: 2.2.1
       ts-invariant: 0.10.3
 
-  '@apollo/client@3.10.0-rc.1(@types/react@18.3.1)(graphql@16.8.1)(react-dom@18.3.1)(react@18.3.1)':
+  '@apollo/client@3.10.0-rc.1(@types/react@18.3.1)(graphql@16.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.8.1)
       '@wry/caches': 1.0.1
@@ -3371,22 +3373,23 @@ snapshots:
       hoist-non-react-statics: 3.3.2
       optimism: 0.18.0
       prop-types: 15.8.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
       rehackt: 0.0.6(@types/react@18.3.1)(react@18.3.1)
       response-iterator: 0.2.6
       symbol-observable: 4.0.0
       ts-invariant: 0.10.3
       tslib: 2.6.2
       zen-observable-ts: 1.2.5
+    optionalDependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
 
-  '@apollo/experimental-nextjs-app-support@0.10.0(@apollo/client@3.10.0-rc.1)(next@14.2.3)(react@18.3.1)':
+  '@apollo/experimental-nextjs-app-support@0.10.0(@apollo/client@3.10.0-rc.1(@types/react@18.3.1)(graphql@16.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@apollo/client': 3.10.0-rc.1(@types/react@18.3.1)(graphql@16.8.1)(react-dom@18.3.1)(react@18.3.1)
-      '@apollo/client-react-streaming': 0.10.0(@apollo/client@3.10.0-rc.1)(react@18.3.1)
-      next: 14.2.3(react-dom@18.3.1)(react@18.3.1)
+      '@apollo/client': 3.10.0-rc.1(@types/react@18.3.1)(graphql@16.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@apollo/client-react-streaming': 0.10.0(@apollo/client@3.10.0-rc.1(@types/react@18.3.1)(graphql@16.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      next: 14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
 
   '@apollo/protobufjs@1.2.6':
@@ -3428,7 +3431,7 @@ snapshots:
       '@apollo/utils.logger': 2.0.1
       graphql: 16.8.1
 
-  '@apollo/server@4.10.4(graphql@16.8.1)':
+  '@apollo/server@4.10.4(graphql@16.8.1)(supports-color@7.2.0)':
     dependencies:
       '@apollo/cache-control-types': 1.0.3(graphql@16.8.1)
       '@apollo/server-gateway-interface': 1.1.1(graphql@16.8.1)
@@ -3447,7 +3450,7 @@ snapshots:
       '@types/node-fetch': 2.6.11
       async-retry: 1.3.3
       cors: 2.8.5
-      express: 4.19.2
+      express: 4.19.2(supports-color@7.2.0)
       graphql: 16.8.1
       loglevel: 1.9.1
       lru-cache: 7.18.3
@@ -3559,10 +3562,10 @@ snapshots:
     dependencies:
       xss: 1.0.15
 
-  '@as-integrations/next@3.0.0(@apollo/server@4.10.4)(next@14.2.3)':
+  '@as-integrations/next@3.0.0(@apollo/server@4.10.4(graphql@16.8.1)(supports-color@7.2.0))(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
-      '@apollo/server': 4.10.4(graphql@16.8.1)
-      next: 14.2.3(react-dom@18.3.1)(react@18.3.1)
+      '@apollo/server': 4.10.4(graphql@16.8.1)(supports-color@7.2.0)
+      next: 14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
   '@auth/core@0.30.0':
     dependencies:
@@ -3574,7 +3577,7 @@ snapshots:
       preact: 10.11.3
       preact-render-to-string: 5.2.3(preact@10.11.3)
 
-  '@auth/prisma-adapter@2.0.0(@prisma/client@5.13.0)':
+  '@auth/prisma-adapter@2.0.0(@prisma/client@5.13.0(prisma@5.13.0))':
     dependencies:
       '@auth/core': 0.30.0
       '@prisma/client': 5.13.0(prisma@5.13.0)
@@ -3749,17 +3752,17 @@ snapshots:
       human-id: 1.0.2
       prettier: 2.8.8
 
-  '@eslint-community/eslint-utils@4.4.0(eslint@8.57.0)':
+  '@eslint-community/eslint-utils@4.4.0(eslint@8.57.0(supports-color@7.2.0))':
     dependencies:
-      eslint: 8.57.0
+      eslint: 8.57.0(supports-color@7.2.0)
       eslint-visitor-keys: 3.4.3
 
   '@eslint-community/regexpp@4.10.0': {}
 
-  '@eslint/eslintrc@2.1.4':
+  '@eslint/eslintrc@2.1.4(supports-color@7.2.0)':
     dependencies:
       ajv: 6.12.6
-      debug: 4.3.4
+      debug: 4.3.4(supports-color@7.2.0)
       espree: 9.6.1
       globals: 13.24.0
       ignore: 5.3.1
@@ -3834,9 +3837,9 @@ snapshots:
 
   '@hapi/hoek@9.3.0': {}
 
-  '@headlessui/react@1.7.19(react-dom@18.3.1)(react@18.3.1)':
+  '@headlessui/react@1.7.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@tanstack/react-virtual': 3.5.0(react-dom@18.3.1)(react@18.3.1)
+      '@tanstack/react-virtual': 3.5.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       client-only: 0.0.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -3845,10 +3848,10 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  '@humanwhocodes/config-array@0.11.14':
+  '@humanwhocodes/config-array@0.11.14(supports-color@7.2.0)':
     dependencies:
       '@humanwhocodes/object-schema': 2.0.3
-      debug: 4.3.4
+      debug: 4.3.4(supports-color@7.2.0)
       minimatch: 3.1.2
     transitivePeerDependencies:
       - supports-color
@@ -3954,7 +3957,7 @@ snapshots:
     optional: true
 
   '@prisma/client@5.13.0(prisma@5.13.0)':
-    dependencies:
+    optionalDependencies:
       prisma: 5.13.0
 
   '@prisma/debug@5.13.0': {}
@@ -4017,7 +4020,7 @@ snapshots:
       '@tanstack/query-core': 5.34.1
       react: 18.3.1
 
-  '@tanstack/react-virtual@3.5.0(react-dom@18.3.1)(react@18.3.1)':
+  '@tanstack/react-virtual@3.5.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@tanstack/virtual-core': 3.5.0
       react: 18.3.1
@@ -4029,17 +4032,18 @@ snapshots:
     dependencies:
       '@trpc/server': 11.0.0-rc.359
 
-  '@trpc/next@11.0.0-rc.359(@tanstack/react-query@5.34.1)(@trpc/client@11.0.0-rc.359)(@trpc/react-query@11.0.0-rc.359)(@trpc/server@11.0.0-rc.359)(next@14.2.3)(react-dom@18.3.1)(react@18.3.1)':
+  '@trpc/next@11.0.0-rc.359(@tanstack/react-query@5.34.1(react@18.3.1))(@trpc/client@11.0.0-rc.359(@trpc/server@11.0.0-rc.359))(@trpc/react-query@11.0.0-rc.359(@tanstack/react-query@5.34.1(react@18.3.1))(@trpc/client@11.0.0-rc.359(@trpc/server@11.0.0-rc.359))(@trpc/server@11.0.0-rc.359)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@trpc/server@11.0.0-rc.359)(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@tanstack/react-query': 5.34.1(react@18.3.1)
       '@trpc/client': 11.0.0-rc.359(@trpc/server@11.0.0-rc.359)
-      '@trpc/react-query': 11.0.0-rc.359(@tanstack/react-query@5.34.1)(@trpc/client@11.0.0-rc.359)(@trpc/server@11.0.0-rc.359)(react-dom@18.3.1)(react@18.3.1)
       '@trpc/server': 11.0.0-rc.359
-      next: 14.2.3(react-dom@18.3.1)(react@18.3.1)
+      next: 14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
+    optionalDependencies:
+      '@tanstack/react-query': 5.34.1(react@18.3.1)
+      '@trpc/react-query': 11.0.0-rc.359(@tanstack/react-query@5.34.1(react@18.3.1))(@trpc/client@11.0.0-rc.359(@trpc/server@11.0.0-rc.359))(@trpc/server@11.0.0-rc.359)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@trpc/react-query@11.0.0-rc.359(@tanstack/react-query@5.34.1)(@trpc/client@11.0.0-rc.359)(@trpc/server@11.0.0-rc.359)(react-dom@18.3.1)(react@18.3.1)':
+  '@trpc/react-query@11.0.0-rc.359(@tanstack/react-query@5.34.1(react@18.3.1))(@trpc/client@11.0.0-rc.359(@trpc/server@11.0.0-rc.359))(@trpc/server@11.0.0-rc.359)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@tanstack/react-query': 5.34.1(react@18.3.1)
       '@trpc/client': 11.0.0-rc.359(@trpc/server@11.0.0-rc.359)
@@ -4127,14 +4131,15 @@ snapshots:
       '@types/node': 20.12.8
       '@types/send': 0.17.4
 
-  '@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.4.5)':
+  '@typescript-eslint/parser@7.2.0(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.4.5)':
     dependencies:
       '@typescript-eslint/scope-manager': 7.2.0
       '@typescript-eslint/types': 7.2.0
-      '@typescript-eslint/typescript-estree': 7.2.0(typescript@5.4.5)
+      '@typescript-eslint/typescript-estree': 7.2.0(supports-color@7.2.0)(typescript@5.4.5)
       '@typescript-eslint/visitor-keys': 7.2.0
-      debug: 4.3.4
-      eslint: 8.57.0
+      debug: 4.3.4(supports-color@7.2.0)
+      eslint: 8.57.0(supports-color@7.2.0)
+    optionalDependencies:
       typescript: 5.4.5
     transitivePeerDependencies:
       - supports-color
@@ -4146,16 +4151,17 @@ snapshots:
 
   '@typescript-eslint/types@7.2.0': {}
 
-  '@typescript-eslint/typescript-estree@7.2.0(typescript@5.4.5)':
+  '@typescript-eslint/typescript-estree@7.2.0(supports-color@7.2.0)(typescript@5.4.5)':
     dependencies:
       '@typescript-eslint/types': 7.2.0
       '@typescript-eslint/visitor-keys': 7.2.0
-      debug: 4.3.4
+      debug: 4.3.4(supports-color@7.2.0)
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.3
       semver: 7.6.0
       ts-api-utils: 1.3.0(typescript@5.4.5)
+    optionalDependencies:
       typescript: 5.4.5
     transitivePeerDependencies:
       - supports-color
@@ -4433,11 +4439,11 @@ snapshots:
 
   binary-extensions@2.3.0: {}
 
-  body-parser@1.20.2:
+  body-parser@1.20.2(supports-color@7.2.0):
     dependencies:
       bytes: 3.1.2
       content-type: 1.0.5
-      debug: 2.6.9
+      debug: 2.6.9(supports-color@7.2.0)
       depd: 2.0.0
       destroy: 1.2.0
       http-errors: 2.0.0
@@ -4655,7 +4661,7 @@ snapshots:
     dependencies:
       conventional-commits-filter: 2.0.7
       dateformat: 3.0.3
-      handlebars: 4.7.8
+      handlebars: 4.7.10
       json-stringify-safe: 5.0.1
       lodash: 4.17.21
       meow: 8.1.2
@@ -4772,17 +4778,23 @@ snapshots:
 
   dateformat@3.0.3: {}
 
-  debug@2.6.9:
+  debug@2.6.9(supports-color@7.2.0):
     dependencies:
       ms: 2.0.0
+    optionalDependencies:
+      supports-color: 7.2.0
 
-  debug@3.2.7:
+  debug@3.2.7(supports-color@7.2.0):
     dependencies:
       ms: 2.1.3
+    optionalDependencies:
+      supports-color: 7.2.0
 
-  debug@4.3.4:
+  debug@4.3.4(supports-color@7.2.0):
     dependencies:
       ms: 2.1.2
+    optionalDependencies:
+      supports-color: 7.2.0
 
   decamelize-keys@1.1.1:
     dependencies:
@@ -4972,38 +4984,39 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-config-next@14.2.3(eslint@8.57.0)(typescript@5.4.5):
+  eslint-config-next@14.2.3(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.4.5):
     dependencies:
       '@next/eslint-plugin-next': 14.2.3
       '@rushstack/eslint-patch': 1.10.2
-      '@typescript-eslint/parser': 7.2.0(eslint@8.57.0)(typescript@5.4.5)
-      eslint: 8.57.0
-      eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.57.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
-      eslint-plugin-jsx-a11y: 6.8.0(eslint@8.57.0)
-      eslint-plugin-react: 7.34.1(eslint@8.57.0)
-      eslint-plugin-react-hooks: 4.6.2(eslint@8.57.0)
+      '@typescript-eslint/parser': 7.2.0(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.4.5)
+      eslint: 8.57.0(supports-color@7.2.0)
+      eslint-import-resolver-node: 0.3.9(supports-color@7.2.0)
+      eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9(supports-color@7.2.0))(eslint-plugin-import@2.29.1)(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0)
+      eslint-plugin-jsx-a11y: 6.8.0(eslint@8.57.0(supports-color@7.2.0))
+      eslint-plugin-react: 7.34.1(eslint@8.57.0(supports-color@7.2.0))
+      eslint-plugin-react-hooks: 4.6.2(eslint@8.57.0(supports-color@7.2.0))
+    optionalDependencies:
       typescript: 5.4.5
     transitivePeerDependencies:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-import-resolver-node@0.3.9:
+  eslint-import-resolver-node@0.3.9(supports-color@7.2.0):
     dependencies:
-      debug: 3.2.7
+      debug: 3.2.7(supports-color@7.2.0)
       is-core-module: 2.13.1
       resolve: 1.22.8
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.57.0):
+  eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9(supports-color@7.2.0))(eslint-plugin-import@2.29.1)(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0):
     dependencies:
-      debug: 4.3.4
+      debug: 4.3.4(supports-color@7.2.0)
       enhanced-resolve: 5.16.0
-      eslint: 8.57.0
-      eslint-module-utils: 2.8.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
+      eslint: 8.57.0(supports-color@7.2.0)
+      eslint-module-utils: 2.8.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9(supports-color@7.2.0))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0)
       fast-glob: 3.3.2
       get-tsconfig: 4.7.3
       is-core-module: 2.13.1
@@ -5014,28 +5027,28 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.8.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0):
+  eslint-module-utils@2.8.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9(supports-color@7.2.0))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0):
     dependencies:
-      '@typescript-eslint/parser': 7.2.0(eslint@8.57.0)(typescript@5.4.5)
-      debug: 3.2.7
-      eslint: 8.57.0
-      eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.57.0)
+      debug: 3.2.7(supports-color@7.2.0)
+    optionalDependencies:
+      '@typescript-eslint/parser': 7.2.0(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.4.5)
+      eslint: 8.57.0(supports-color@7.2.0)
+      eslint-import-resolver-node: 0.3.9(supports-color@7.2.0)
+      eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9(supports-color@7.2.0))(eslint-plugin-import@2.29.1)(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0):
+  eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0):
     dependencies:
-      '@typescript-eslint/parser': 7.2.0(eslint@8.57.0)(typescript@5.4.5)
       array-includes: 3.1.8
       array.prototype.findlastindex: 1.2.5
       array.prototype.flat: 1.3.2
       array.prototype.flatmap: 1.3.2
-      debug: 3.2.7
+      debug: 3.2.7(supports-color@7.2.0)
       doctrine: 2.1.0
-      eslint: 8.57.0
-      eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.8.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
+      eslint: 8.57.0(supports-color@7.2.0)
+      eslint-import-resolver-node: 0.3.9(supports-color@7.2.0)
+      eslint-module-utils: 2.8.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9(supports-color@7.2.0))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0)
       hasown: 2.0.2
       is-core-module: 2.13.1
       is-glob: 4.0.3
@@ -5045,12 +5058,14 @@ snapshots:
       object.values: 1.2.0
       semver: 6.3.1
       tsconfig-paths: 3.15.0
+    optionalDependencies:
+      '@typescript-eslint/parser': 7.2.0(eslint@8.57.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.4.5)
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-jsx-a11y@6.8.0(eslint@8.57.0):
+  eslint-plugin-jsx-a11y@6.8.0(eslint@8.57.0(supports-color@7.2.0)):
     dependencies:
       '@babel/runtime': 7.24.5
       aria-query: 5.3.0
@@ -5062,7 +5077,7 @@ snapshots:
       damerau-levenshtein: 1.0.8
       emoji-regex: 9.2.2
       es-iterator-helpers: 1.0.19
-      eslint: 8.57.0
+      eslint: 8.57.0(supports-color@7.2.0)
       hasown: 2.0.2
       jsx-ast-utils: 3.3.5
       language-tags: 1.0.9
@@ -5070,11 +5085,11 @@ snapshots:
       object.entries: 1.1.8
       object.fromentries: 2.0.8
 
-  eslint-plugin-react-hooks@4.6.2(eslint@8.57.0):
+  eslint-plugin-react-hooks@4.6.2(eslint@8.57.0(supports-color@7.2.0)):
     dependencies:
-      eslint: 8.57.0
+      eslint: 8.57.0(supports-color@7.2.0)
 
-  eslint-plugin-react@7.34.1(eslint@8.57.0):
+  eslint-plugin-react@7.34.1(eslint@8.57.0(supports-color@7.2.0)):
     dependencies:
       array-includes: 3.1.8
       array.prototype.findlast: 1.2.5
@@ -5083,7 +5098,7 @@ snapshots:
       array.prototype.tosorted: 1.1.3
       doctrine: 2.1.0
       es-iterator-helpers: 1.0.19
-      eslint: 8.57.0
+      eslint: 8.57.0(supports-color@7.2.0)
       estraverse: 5.3.0
       jsx-ast-utils: 3.3.5
       minimatch: 3.1.2
@@ -5103,20 +5118,20 @@ snapshots:
 
   eslint-visitor-keys@3.4.3: {}
 
-  eslint@8.57.0:
+  eslint@8.57.0(supports-color@7.2.0):
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.0)
+      '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.0(supports-color@7.2.0))
       '@eslint-community/regexpp': 4.10.0
-      '@eslint/eslintrc': 2.1.4
+      '@eslint/eslintrc': 2.1.4(supports-color@7.2.0)
       '@eslint/js': 8.57.0
-      '@humanwhocodes/config-array': 0.11.14
+      '@humanwhocodes/config-array': 0.11.14(supports-color@7.2.0)
       '@humanwhocodes/module-importer': 1.0.1
       '@nodelib/fs.walk': 1.2.8
       '@ungap/structured-clone': 1.2.0
       ajv: 6.12.6
       chalk: 4.1.2
       cross-spawn: 7.0.3
-      debug: 4.3.4
+      debug: 4.3.4(supports-color@7.2.0)
       doctrine: 3.0.0
       escape-string-regexp: 4.0.0
       eslint-scope: 7.2.2
@@ -5168,21 +5183,21 @@ snapshots:
 
   etag@1.8.1: {}
 
-  express@4.19.2:
+  express@4.19.2(supports-color@7.2.0):
     dependencies:
       accepts: 1.3.8
       array-flatten: 1.1.1
-      body-parser: 1.20.2
+      body-parser: 1.20.2(supports-color@7.2.0)
       content-disposition: 0.5.4
       content-type: 1.0.5
       cookie: 0.6.0
       cookie-signature: 1.0.6
-      debug: 2.6.9
+      debug: 2.6.9(supports-color@7.2.0)
       depd: 2.0.0
       encodeurl: 1.0.2
       escape-html: 1.0.3
       etag: 1.8.1
-      finalhandler: 1.2.0
+      finalhandler: 1.2.0(supports-color@7.2.0)
       fresh: 0.5.2
       http-errors: 2.0.0
       merge-descriptors: 1.0.1
@@ -5194,8 +5209,8 @@ snapshots:
       qs: 6.11.0
       range-parser: 1.2.1
       safe-buffer: 5.2.1
-      send: 0.18.0
-      serve-static: 1.15.0
+      send: 0.18.0(supports-color@7.2.0)
+      serve-static: 1.15.0(supports-color@7.2.0)
       setprototypeof: 1.2.0
       statuses: 2.0.1
       type-is: 1.6.18
@@ -5242,9 +5257,9 @@ snapshots:
     dependencies:
       to-regex-range: 5.0.1
 
-  finalhandler@1.2.0:
+  finalhandler@1.2.0(supports-color@7.2.0):
     dependencies:
-      debug: 2.6.9
+      debug: 2.6.9(supports-color@7.2.0)
       encodeurl: 1.0.2
       escape-html: 1.0.3
       on-finished: 2.4.1
@@ -5449,7 +5464,7 @@ snapshots:
 
   graphql@16.8.1: {}
 
-  handlebars@4.7.8:
+  handlebars@4.7.10:
     dependencies:
       minimist: 1.2.8
       neo-async: 2.6.2
@@ -5919,13 +5934,13 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next-auth@5.0.0-beta.17(next@14.2.3)(react@18.3.1):
+  next-auth@5.0.0-beta.17(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
     dependencies:
       '@auth/core': 0.30.0
-      next: 14.2.3(react-dom@18.3.1)(react@18.3.1)
+      next: 14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
 
-  next@14.2.3(react-dom@18.3.1)(react@18.3.1):
+  next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@next/env': 14.2.3
       '@swc/helpers': 0.5.5
@@ -6160,8 +6175,9 @@ snapshots:
   postcss-load-config@4.0.2(postcss@8.4.38):
     dependencies:
       lilconfig: 3.1.1
-      postcss: 8.4.38
       yaml: 2.4.2
+    optionalDependencies:
+      postcss: 8.4.38
 
   postcss-nested@6.0.1(postcss@8.4.38):
     dependencies:
@@ -6260,7 +6276,7 @@ snapshots:
       react: 18.3.1
       scheduler: 0.23.2
 
-  react-hook-form-persist@3.0.0(react-hook-form@7.51.4)(react@18.3.1):
+  react-hook-form-persist@3.0.0(react-hook-form@7.51.4(react@18.3.1))(react@18.3.1):
     dependencies:
       react: 18.3.1
       react-hook-form: 7.51.4(react@18.3.1)
@@ -6355,7 +6371,7 @@ snapshots:
       set-function-name: 2.0.2
 
   rehackt@0.0.6(@types/react@18.3.1)(react@18.3.1):
-    dependencies:
+    optionalDependencies:
       '@types/react': 18.3.1
       react: 18.3.1
 
@@ -6426,9 +6442,9 @@ snapshots:
     dependencies:
       lru-cache: 6.0.0
 
-  send@0.18.0:
+  send@0.18.0(supports-color@7.2.0):
     dependencies:
-      debug: 2.6.9
+      debug: 2.6.9(supports-color@7.2.0)
       depd: 2.0.0
       destroy: 1.2.0
       encodeurl: 1.0.2
@@ -6444,12 +6460,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  serve-static@1.15.0:
+  serve-static@1.15.0(supports-color@7.2.0):
     dependencies:
       encodeurl: 1.0.2
       escape-html: 1.0.3
       parseurl: 1.3.3
-      send: 0.18.0
+      send: 0.18.0(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
 
